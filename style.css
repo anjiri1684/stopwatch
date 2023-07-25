@@ -1,0 +1,61 @@
+body {
+  background-color: #A8A196;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  overflow: hidden;
+  align-items: center;
+}
+
+#timer {
+  font-size: 7rem;
+  font-weight: 700;
+  color: #1D5B79;
+  text-shadow:  2px 2px #9BE8D8;
+  width: 600px;
+  text-align: center;
+  margin: 40px;
+}
+
+#buttons {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  background-color: #A1CCD1;
+  color:#333;
+  border: none;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1.5rem 4rem;
+  margin: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, .3);
+  transition: all .2s;
+}
+
+button:hover {
+  background-color: #557A46;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, .5);
+}
+
+button[disabled] {
+  opacity: .5;
+  cursor: default;
+}
+
+@media (max-width: 800px) {
+  #timer {
+    font-size: 4rem;
+    width: 350px;
+  }
+
+  button {
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+  }
+}
